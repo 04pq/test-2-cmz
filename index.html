@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CRIMSON CFW</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container">
+
+<a class="navbar-brand logo" href="index.html">
+<img src="images/pc.png" class="img-_-logo">
+</a>
+
+<ul class="navbar-nav ms-auto align-items-center">
+
+<li class="nav-item"><a class="nav-link nav-btn" href="index.html">Home</a></li>
+
+
+<li class="nav-item">
+<a class="nav-link nav-btn" href="shop.html">Our Shop</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link nav-btn" href="product.html">Product Details</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link nav-btn" href="leaderboard.html">Leaderboard</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- CINEMATIC HERO -->
+
+<section class="video-hero">
+
+    <!-- START IMAGE -->
+    <div class="hero-poster" id="heroPoster">
+        <img src="images/welcome.png" alt="CRIMSON">
+    </div>
+
+    <!-- VIDEO -->
+    <video
+        id="cinematicVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        class="hero-video">
+
+        <source src="images/crimson.mp4" type="video/mp4">
+
+    </video>
+
+    <!-- OVERLAY -->
+    <div class="video-overlay"></div>
+
+    <!-- CONTENT -->
+    <div class="hero-content">
+
+        <h1>CRIMSON CFW</h1>
+
+        <p>
+            THE ULTIMATE ROLEPLAY EXPERIENCE
+        </p>
+
+        <!-- VOLUME -->
+        <div class="volume-controller">
+
+            <i class="fa-solid fa-volume-high"></i>
+
+            <input
+                type="range"
+                id="volumeSlider"
+                min="0"
+                max="100"
+                value="50">
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+const video = document.getElementById("cinematicVideo");
+const slider = document.getElementById("volumeSlider");
+const poster = document.getElementById("heroPoster");
+
+/* مستوى الصوت الابتدائي */
+video.volume = 0.5;
+
+/* التحكم بالصوت */
+slider.addEventListener("input", function(){
+
+    video.muted = false;
+    video.volume = this.value / 100;
+
+});
+
+/* إظهار الصورة لمدة ثانيتين */
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        poster.style.opacity = "0";
+
+        setTimeout(() => {
+
+            poster.style.display = "none";
+
+        }, 700);
+
+    }, 750);
+
+});
+
+</script>
+<section class="crimson-marquee reveal">
+
+    <div class="crimson-track">
+
+        <a href="index.html">
+        <span> CRIMSON CFW</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <a href="product.html">
+         <span> PREMIUM EXPERIENCE</span>
+         <span class="crimson-dot">•</span>
+        </a>
+
+        <span> REAL ROLEPLAY</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="rules.html#police">
+        <span> POLICE SYSTEM</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> GANG WARS</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="shop.html">
+        <span> EXCLUSIVE CARS</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> UNIQUE SCRIPTS</span>
+        <span class="crimson-dot">•</span>
+
+         <a href="gallery.html">
+        <span>BEST Gallery</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <a href="https://discord.gg/cmzrp">
+        <span> BEST COMMUNITY</span>
+        <span class="crimson-dot">•</span>
+        </a>
+        <!-- تكرار -->
+        <a href="index.html">
+        <span> CRIMSON CFW</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> PREMIUM EXPERIENCE</span>
+        <span class="crimson-dot">•</span>
+
+        <span> REAL ROLEPLAY</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="rules.html#police">
+        <span> POLICE SYSTEM</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+                 <a href="gallery.html">
+        <span>BEST Gallery</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> GANG WARS</span>
+
+    </div>
+
+</section>
+
+
+<!-- JOIN SERVER -->
+
+<section class="join-server reveal">
+
+    <div class="join-wrapper">
+
+        <!-- SERVER CARD -->
+        <div class="join-card">
+
+            <div class="join-header">
+                <h2>JOIN CRIMSON CFW</h2>
+
+                <span class="server-status">
+                    ● ONLINE
+                </span>
+            </div>
+
+            <p class="join-description">
+                ادخل إلى عالم CRIMSON واستمتع بأفضل تجربة رول بلاي.
+            </p>
+
+            <div class="server-stats">
+
+                <div class="stat-box">
+                    <h3>347+</h3>
+                    <span>PLAYERS</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>1</h3>
+                    <span>SEASON</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>24/7</h3>
+                    <span>STATUS</span>
+                </div>
+
+            </div>
+
+            <div class="join-buttons">
+
+                <a href="fivem://connect/31.56.120.152"
+                   class="join-btn-main">
+                    JOIN SERVER
+                </a>
+
+                <a href="https://discord.gg/cmzrp"
+                   target="_blank"
+                   class="discord-btn-main">
+                    JOIN DISCORD
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="quick-links">
+
+            <a href="rules.html" class="quick-btn">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <span>RULES</span>
+            </a>
+
+             <a href="rules.html#police" class="quick-btn">
+                 <i class="fa-solid fa-shield"></i>
+                   <span>POLICE</span>
+            </a>
+
+            <a href="rules.html#gang" class="quick-btn">
+                 <i class="fa-solid fa-crown"></i>
+                  <span>GANGS</span>
+            </a>
+
+            <a href="javascript:void(0)"
+                        class="quick-btn"
+                        onclick="openContactModal()">
+
+                    <i class="fa-solid fa-envelope"></i>
+                         <span>CONTACT</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<section class="crimson-marquee reveal">
+
+    <div class="crimson-track">
+
+        <a href="index.html">
+        <span> CRIMSON CFW</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <a href="product.html">
+         <span> PREMIUM EXPERIENCE</span>
+         <span class="crimson-dot">•</span>
+        </a>
+
+        <span> REAL ROLEPLAY</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="rules.html#police">
+        <span> POLICE SYSTEM</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> GANG WARS</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="shop.html">
+        <span> EXCLUSIVE CARS</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> UNIQUE SCRIPTS</span>
+        <span class="crimson-dot">•</span>
+
+         <a href="gallery.html">
+        <span>BEST Gallery</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <a href="https://discord.gg/cmzrp">
+        <span> BEST COMMUNITY</span>
+        <span class="crimson-dot">•</span>
+        </a>
+        <!-- تكرار -->
+        <a href="index.html">
+        <span> CRIMSON CFW</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> PREMIUM EXPERIENCE</span>
+        <span class="crimson-dot">•</span>
+
+        <span> REAL ROLEPLAY</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="rules.html#police">
+        <span> POLICE SYSTEM</span>
+        <span class="crimson-dot">•</span>
+        </a>
+                 <a href="gallery.html">
+        <span>BEST Gallery</span>
+        <span class="crimson-dot">•</span>
+        </a>
+        <span> GANG WARS</span>
+
+    </div>
+
+</section>
+
+
+<section class="why-crimson reveal">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h1>WHY CRIMSON</h1>
+            <p>
+                لماذا تختار CRIMSON CFW؟
+            </p>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <h2> REALISTIC ROLEPLAY</h2>
+                <p>
+                    تجربة رول بلاي واقعية ومتوازنة لجميع اللاعبين.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h2> UNIQUE SCRIPTS</h2>
+                <p>
+                    سكربتات حصرية ومطورة خصيصاً للسيرفر.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h2> EXCLUSIVE VEHICLES</h2>
+                <p>
+                    سيارات حصرية ومحتوى متجدد باستمرار.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h2> PROFESSIONAL FACTIONS</h2>
+                <p>
+                    أنظمة شرطة وعصابات وقطاعات احترافية.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h2> ACTIVE COMMUNITY</h2>
+                <p>
+                    مجتمع نشط وفعاليات مستمرة.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h2> PREMIUM EXPERIENCE</h2>
+                <p>
+                    أفضل أداء وأفضل تجربة لعب ممكنة.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="trending reveal">
+
+<div class="container">
+
+<div class="d-flex justify-content-between align-items-center mb-5">
+
+<h3 class="trend-title">Trending </h3>
+
+<a href="shop.html" class="btn view-btn">VIEW ALL</a>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3">
+<div class="game-card">
+<a href="shop.html"><img src="img/911 Turbo S.png">
+</a>
+<h6>SPORT</h6><h5>911 Turbo S</h5><p class="price">$25</p>
+<a href="shop.html" class="btn view-btn">VIEW</a>
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="game-card">
+    <a href="shop.html"><img src="img/Camaro ZL1 2012.png">
+</a>
+<h6>CHEVROLET</h6><h5>Camaro ZL1 2012</h5><p class="price">$30</p>
+<a href="shop.html" class="btn view-btn">VIEW</a>
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="game-card">
+    <a href="shop.html"><img src="img/VIPER ACR 2016.png">
+</a>
+<h6>DODGE</h6><h5>VIPER ACR 2016</h5><p class="price">$50</p>
+<a href="shop.html" class="btn view-btn">VIEW</a>
+</div>
+</div>       
+
+<div class="col-lg-3">
+<div class="game-card">
+    <a href="shop.html"><img src="img/LFA .png">
+</a>
+<h6>LEXUS</h6><h5>LFA</h5><p class="price">$35</p>
+ <a href="shop.html" class="btn view-btn">VIEW</a>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- BUY POPUP -->
+
+<div class="buy-modal" id="buyModal">
+
+    <div class="buy-box">
+
+        <h2>شراء المنتج</h2>
+
+        <p>
+            لإتمام عملية شراء هذا المنتج يرجى فتح تذكرة في ديسكورد كريمسون.
+        </p>
+
+        <a href="https://discord.gg/example"
+           target="_blank"
+           class="ticket-btn">
+            اضغط هنا لفتح تذكرة
+        </a>
+
+        <button class="cancel-btn"
+                onclick="closeBuyModal()">
+            إلغاء
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- CONTACT MODAL -->
+
+<div id="contactModal" class="buy-modal">
+
+    <div class="buy-box">
+
+        <h2>CONTACT INFORMATION</h2>
+
+        <p class="contact-text">
+            تحتاج مساعدة أو استفسار؟
+        </p>
+
+        <hr>
+
+<p class="mt-4">
+
+    <i class="fa-brands fa-discord discord-icon"></i>
+
+    <a
+        href="https://discord.gg/cmzrp"
+        target="_blank"
+        class="discord-link">
+         Discord Server
+    </a>
+
+</p>
+
+<a href="https://discord.gg/cmzrp"
+   target="_blank"
+   class="discord-btn">
+    JOIN DISCORD
+</a>
+
+<p class="contact-item">
+    <span class="contact-icon"></span>
+    <span> Server Region: Saudi Arabia</span>
+</p>
+
+            <button
+                class="cancel-btn"
+                onclick="closeContactModal()">
+                CANCEL
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<section class="crimson-marquee reveal">
+
+    <div class="crimson-track">
+
+        <a href="index.html">
+        <span> CRIMSON CFW</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <a href="product.html">
+         <span> PREMIUM EXPERIENCE</span>
+         <span class="crimson-dot">•</span>
+        </a>
+
+        <span> REAL ROLEPLAY</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="rules.html#police">
+        <span> POLICE SYSTEM</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> GANG WARS</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="shop.html">
+        <span> EXCLUSIVE CARS</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+
+         <a href="gallery.html">
+        <span>BEST Gallery</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> UNIQUE SCRIPTS</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="https://discord.gg/cmzrp">
+        <span> BEST COMMUNITY</span>
+        <span class="crimson-dot">•</span>
+        </a>
+        <!-- تكرار -->
+        <a href="index.html">
+        <span> CRIMSON CFW</span>
+        <span class="crimson-dot">•</span>
+        </a>
+
+        <span> PREMIUM EXPERIENCE</span>
+        <span class="crimson-dot">•</span>
+
+        <span> REAL ROLEPLAY</span>
+        <span class="crimson-dot">•</span>
+
+        <a href="rules.html#police">
+        <span> POLICE SYSTEM</span>
+        <span class="crimson-dot">•</span>
+        </a>
+                 <a href="gallery.html">
+        <span>BEST Gallery</span>
+        <span class="crimson-dot">•</span>
+        </a>
+        <span> GANG WARS</span>
+
+    </div>
+
+</section>
+
+ <div class="footer-links">
+
+    <a href="index.html">HOME</a>
+
+    <a href="shop.html">SHOP</a>
+
+    <a href="leaderboard.html">LEADERBOARD</a>
+
+    <a href="rules.html">CITY RULES</a>
+
+    <a href="rules.html#police">POLICE</a>
+
+    <a href="rules.html#gang">GANGS</a>
+
+    <a href="rules.html#store">STORE RULES</a>
+    
+    <a href="product.html">Product Details</a>
+
+        <a href="gallery.html">Crimson Gallery</a>
+
+
+    <a href="https://discord.gg/cmzrp" target="_blank">
+        DISCORD
+    </a>
+
+    <a href="#" onclick="openContactModal()">
+        CONTACT US
+    </a>
+
+</div>
+
+
+
+<script>
+
+function openContactModal(){
+    document.getElementById(
+        "contactModal"
+    ).style.display="flex";
+}
+
+function closeContactModal(){
+    document.getElementById(
+        "contactModal"
+    ).style.display="none";
+}
+
+</script>
+<script>
+
+const observer = new IntersectionObserver(entries=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add('show');
+
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+document.querySelectorAll('.reveal')
+.forEach(el=>observer.observe(el));
+
+</script>
+<script>
+
+const reveals =
+document.querySelectorAll('.reveal');
+
+function revealElements(){
+
+    reveals.forEach(el=>{
+
+        const top =
+        el.getBoundingClientRect().top;
+
+        const trigger =
+        window.innerHeight - 100;
+
+        if(top < trigger){
+
+            el.classList.add('active');
+
+        }
+
+    });
+
+}
+
+window.addEventListener(
+    'scroll',
+    revealElements
+);
+
+window.addEventListener(
+    'load',
+    revealElements
+);
+
+</script>
+
+
+</body>
+</html>
